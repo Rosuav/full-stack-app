@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "start": "babel server.js -o es5server.js && node es5server.js",
-    "build": "mkdir -p build && cp client/*.{css,html} build/ && webpack",
+    "build": "mkdir -p build && cp client/*.css client/*.html build/ && webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
