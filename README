@@ -4,4 +4,6 @@ To build: npm run build
 
 To start the server: npm run start
 
+To start in dev mode, with everything watched: npm run watch
+
 TODO: Use 'make' if available, to reduce the work required (esp wrt es5server)
