@@ -6,6 +6,11 @@
   "scripts": {
     "start": "babel server.js -o es5server.js && node es5server.js",
     "build": "mkdir -p build && cp client/*.css client/*.html build/ && webpack",
+    "watch": "npm run build && run-p watch:*",
+    "watch:copy": "chokidar \"client/*.css\" \"client/*.html\" -c \"cp {path} build/\"",
+    "watch:js": "webpack --watch",
+    "watch:server": "nodemon -w server.js server.js -x \"npm run\"",
+    "server.js": "npm start",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -30,6 +35,9 @@
     "react-dom": "^15.3.2"
   },
   "devDependencies": {
+    "chokidar-cli": "^1.2.0",
+    "nodemon": "^1.11.0",
+    "npm-run-all": "^3.1.1",
     "webpack": "^1.13.3"
   }
 }
