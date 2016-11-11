@@ -1,0 +1,7 @@
+Basic full-stack JavaScript app template
+
+To build: npm run build
+
+To start the server: npm run start
+
+TODO: Add 'watch'
