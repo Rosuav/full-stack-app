@@ -4,6 +4,7 @@ module.exports = {
 		path: "./build",
 		filename: "app.js"
 	},
+	devtool: 'inline-source-map',
 	module: {
 		loaders: [{
 			test: /\.js$/,
