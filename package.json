@@ -4,7 +4,7 @@
   "description": "Template full-stack JavaScript app",
   "main": "server.js",
   "scripts": {
-    "start": "babel server.js -o es5server.js && node es5server.js",
+    "start": "node server.js",
     "build": "mkdir -p build && cp client/*.css client/*.html build/ && webpack",
     "watch": "npm run build && run-p watch:*",
     "watch:copy": "chokidar \"client/*.css\" \"client/*.html\" -c \"cp {path} build/\"",

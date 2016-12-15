@@ -1,4 +1,6 @@
-import express from 'express';
+//NOTE: ES6 'import' statements cannot be used in the server - just use ES5
+//syntax instead ('require'). Other ES6 features should all be available.
+const express = require('express');
 
 const HOST = process.env.HOST;
 const PORT = process.env.PORT || 8080;
