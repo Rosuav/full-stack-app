@@ -5,3 +5,6 @@ To build: npm run build
 To start the server: npm run start
 
 To start in dev mode, with everything watched: npm run watch
+
+TODO: Use makefiles to cut down on some of the work (eg 'npm run start'
+currently runs 'npm run build' unconditionally).
