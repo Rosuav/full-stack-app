@@ -6,6 +6,7 @@ export default connect()(class NewPaula extends React.Component {
 	update(e) {
 		e.preventDefault();
 		this.props.dispatch(actions.replace_paula(this.refs.paula.value));
+		this.props.dispatch(actions.fetch_hello());
 	}
 
 	render() {

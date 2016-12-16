@@ -9,7 +9,7 @@ const app = express();
 app.use(express.static("build"));
 
 app.get("/hello", (req, res) => {
-	res.send("Hello, world!");
+	res.json({message: "Hello, world!"});
 });
 
 function run_server() {
