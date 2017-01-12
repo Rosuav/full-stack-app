@@ -7,7 +7,7 @@
     "start": "npm run build && node server.js",
     "build": "mkdir -p build && cp client/static/* build/ && webpack",
     "watch": "npm run build && run-p watch:*",
-    "watch:copy": "chokidar \"client/*\" -c \"cp {path} build/\"",
+    "watch:copy": "chokidar \"client/static/*\" -c \"cp {path} build/\"",
     "watch:js": "webpack --watch",
     "watch:server": "nodemon -w server.js server.js -x \"npm run\"",
     "server.js": "npm start",
