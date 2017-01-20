@@ -20,9 +20,9 @@ const fetch_hello_success = message => ({
 
 //A single generic failure message can be used for all network failures,
 //unless you specifically need to do something when a particular one fails.
-const report_failure = (what, err) => ({
+const report_failure = (what, error) => ({
 	type: 'REPORT_FAILURE',
-	what, err
+	what, error
 })
 
 export const fetch_hello = () => dispatch => {
