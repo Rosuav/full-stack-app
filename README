@@ -8,3 +8,7 @@ To start in dev mode, with everything watched: npm run watch
 
 TODO: Use makefiles to cut down on some of the work (eg 'npm run start'
 currently runs 'npm run build' unconditionally).
+
+The intention of this template is that you, the author of your app,
+should claim it as your own. Change all the URLs and authorship marks in
+package.json to be your own :)
