@@ -4,7 +4,7 @@ module.exports = {
 		path: "./build",
 		filename: "app.js"
 	},
-	devtool: 'inline-source-map',
+	devtool: process.env.NODE_ENV === 'production' ? 'source-map' : 'inline-source-map',
 	module: {
 		loaders: [{
 			test: /\.js$/,
