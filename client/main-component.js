@@ -12,7 +12,7 @@ class MainComponent extends React.Component {
 	}
 }
 
-export default connect((state, props) => ({
+export default connect(
 	//Select your state -> props mappings here
-	paula: state.paula,
-}))(MainComponent);
+	({paula}) => ({paula})
+)(MainComponent);
